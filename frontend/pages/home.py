@@ -5,14 +5,12 @@ register_page(__name__, path='/')
 
 layout = html.Div([
     html.H1('This is our Home page'),
-    html.Button('Authorize', id='submit-val')
+    html.Button('Authorize', id='authorize-btn')
 ])
 
 
 @callback(
-    Output('container-button-basic', 'children'),
-    Input('submit-val', 'n_clicks'),
-    State('input-on-submit', 'value'),
+    Input('authorize-btn', 'n_clicks'),
     prevent_initial_call=True
 )
 def update_output(n_clicks, value):
