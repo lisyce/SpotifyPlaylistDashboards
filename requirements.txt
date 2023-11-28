@@ -12,6 +12,7 @@ dash-html-components==2.0.0
 dash-table==5.0.0
 fastapi==0.104.1
 Flask==3.0.0
+h11==0.14.0
 idna==3.6
 importlib-metadata==6.8.0
 itsdangerous==2.1.2
@@ -36,5 +37,6 @@ tenacity==8.2.3
 typing_extensions==4.8.0
 tzdata==2023.3
 urllib3==2.1.0
+uvicorn==0.24.0.post1
 Werkzeug==3.0.1
 zipp==3.17.0
