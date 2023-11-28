@@ -1,10 +1,10 @@
-from dash import Dash, html
+from dash import Dash, html, dash
 
-app = Dash(__name__)
+app = Dash(__name__, use_pages=True)
 
 app.layout = html.Div([
-    html.Div(children='Hello World')
+    dash.page_container
 ])
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=8000)
