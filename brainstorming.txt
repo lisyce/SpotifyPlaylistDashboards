@@ -1,0 +1,21 @@
+Research Questions (per-year)
+- How popular are the artists I listen to?
+--- use artist followers to calculate this; the popularity metrics reflect "real-time" popularity and won't work for past years
+- What are my favorite genres?
+- What decade do I listen to the most music from?
+- How has all of this changed over time?
+- how many different artists are in my top 100 tracks?
+
+Visualizations
+- Connectivity of artists/tracks (connect artists by genre)
+- Histograms of audio features
+
+Data collection steps (batch tracks)
+- For each playlist
+--- get playlist items https://developer.spotify.com/documentation/web-api/reference/get-playlists-tracks
+--- get audio features https://developer.spotify.com/documentation/web-api/reference/get-several-audio-features 
+
+
+App Flow:
+1. User clicks button to authorize application
+2. User inputs a playlist link ()
